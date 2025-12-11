@@ -4,7 +4,7 @@
 ;; Fees: 0.5% to protocol wallet on every repayment.
 
 (define-data-var protocol-fee-percent uint u50) ;; 0.5% = 50 basis points (out of 10,000)
-(define-data-var protocol-wallet principal SP3X4SQFXY9KS44PBKHX9E54NJHDG28WD76AAM8YX) ;; ← REPLACE WITH YOUR LEATHER STX ADDRESS FROM STEP 1
+(define-data-var protocol-wallet principal 'SP3X4SQFXY9KS44PBKHX9E54NJHDG28WD76AAM8YX) ;; ← REPLACE WITH YOUR LEATHER STX ADDRESS FROM STEP 1
 
 ;; Simple map for liquidity pool (lender deposits)
 (define-map pool uint uint) ;; key: lender tx-sender hash, value: supplied amount in micro-STX (sats equiv)
